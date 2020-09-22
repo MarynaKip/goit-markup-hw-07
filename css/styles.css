@@ -70,6 +70,16 @@ textarea {
   align-items: center;
 }
 
+/* Section */
+
+.section {
+  padding: 94px 0px;
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
 /* Logo */
 .logo {
   color: var(--accent-color);
@@ -87,6 +97,44 @@ textarea {
 
 .logo--dark {
   color: var(--white-color);
+}
+
+/* Buttons */
+
+.button {
+  padding: 10px 32px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.filter .button {
+  padding: 6px 22px;
+
+  background-color: var(--secondary-button-color);
+  color: var(--title-text-color);
+  box-shadow: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter .button:hover,
+.filter .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -200,28 +248,6 @@ textarea {
 }
 }
 
-/* .contact .item:nth-child(1)::before {
-  content: "";
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  background-size: contain;
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.contact .item:nth-child(2)::before {
-  content: "";
-  display: inline-flex;
-  width: 10px;
-  height: 16px;
-  background-size: contain;
-  background-image: url(../images/smartphone.svg);
-  background-repeat: no-repeat;
-  margin-right: 10px; */
-}
-
-
 .nav__link:hover,
 .nav__link:focus,
 .contact__link:hover,
@@ -231,17 +257,13 @@ textarea {
 
 /* Main */
 
-.section {
-  padding: 94px 0px;
-}
-
-.section-title {
-  color: var(--title-text-color);
-}
-
 .hero {
-  background-color: var(--secondary-bg-color);
+  text-align: center;
 
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: var(--secondary-bg-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -249,15 +271,10 @@ textarea {
     ),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  text-align: center;
+  background-position: center; 
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -269,6 +286,8 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* Modal */
 
 .backdrop {
   position: fixed;
@@ -511,7 +530,7 @@ fill: var(--accent-color);
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal .button.primary {
+.modal .button {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -525,37 +544,43 @@ fill: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .button.primary:hover,
-.modal .button.primary:focus,{
+.modal .button:hover,
+.modal .button:focus,{
   background-color: #188CE8;
 }
 
 
 
-.section.advantages {
+
+/* Advantages */
+
+
+.advantages {
   padding-bottom: 0px;
 }
 
-.advantages h2 {
+.advantages__title {
   display: none;
 }
 
 
-.advantages .list-advantages {
+.advantages__list {
   display: flex;
 }
 
-.advantages .item {
+.advantages__item {
   width: calc((100% - (30px * 3)) / 4);
 }
 
-.advantages .item + .item {
+.advantages__item + .advantages__item {
   margin-left: 30px;
 }
 
-.advantages .section-title {
+.advantages__title--sign {
   display: inline-block;
   margin-bottom: 10px;
+
+  color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 14px;
@@ -563,13 +588,13 @@ fill: var(--accent-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantages p {
+.advantages__paragraph {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.advantages-rectangle {
+.advantages__rectangle {
   background-color: var(--secondary-button-color);
   display: flex;
   justify-content: center;
@@ -602,6 +627,10 @@ fill: var(--accent-color);
 .list-advantages .item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
 } */
+
+
+
+
 
 .workout {
   display: flex;
@@ -791,46 +820,6 @@ fill: var(--accent-color);
 
 
 
-/* Buttons */
-
-.button {
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.button.primary {
-  padding: 10px 32px;
-
-  background-color: var(--accent-color);
-  color: var(--white-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-    letter-spacing: 0.06em;
-}
-
-.filter .button {
-  padding: 6px 22px;
-
-  background-color: var(--secondary-button-color);
-  color: var(--title-text-color);
-  box-shadow: none;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter .button:hover,
-.filter .button:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .works {
   display: flex;
@@ -1043,7 +1032,7 @@ letter-spacing: 0.03em;
 }
 
 
-.footer .button.primary {
+.footer .button {
   margin-left: 12px;
   padding-left: 29px;
   padding-right: 62px;
