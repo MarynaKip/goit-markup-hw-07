@@ -145,6 +145,17 @@ textarea {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button--footer {
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 62px;
+
+  background-image: url(../images/icon-send.png);
+  background-repeat: no-repeat;
+  background-position: left 148px bottom 13px;
+}
+
+
 /* Social */
 
 .social--team {
@@ -305,8 +316,8 @@ background-color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__link:hover .icon,
-.contact__link:focus .icon{
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon{
   fill: var(--accent-color);
 }
 
@@ -630,8 +641,6 @@ fill: var(--accent-color);
 }
 
 
-
-
 /* Advantages */
 
 
@@ -773,13 +782,13 @@ fill: var(--accent-color);
 
 /* Redular customer */
 
-.regular-customers .regular-customer-list {
+.customer {
   display: flex;
   justify-content: space-between;
   width: 1170;
 }
 
-.regular-customers-link {
+.customer__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -792,20 +801,20 @@ fill: var(--accent-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-customers-link:hover,
-.regular-customers-link:focus {
+.customer__link:hover,
+.customer__link:focus {
   border: 1px solid var(--accent-color)
 }
 
-.regular-customers-link .icon {
+.customer__icon {
 fill: #AFB1B8;
 
 transition: 250ms;
 animation: change-client-fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-customers-link:hover .icon,
-.regular-customers-link:focus .icon {
+.customer__link:hover .customer__icon,
+.customer__link:focus .customer__icon {
 fill: var(--accent-color);
 }
 
@@ -817,6 +826,11 @@ fill: var(--accent-color);
     fill: var(--accent-color);
   }
 }
+
+
+/* PORTFOLIO */
+
+
 
 .filter {
   display: flex;
@@ -887,20 +901,15 @@ fill: var(--accent-color);
   left: 50%;
   transform: translate(-50%, -50%);
     
-width: 322px;
+  width: 322px;
 
-font-family: Roboto;
-font-size: 18px;
-line-height: 1.56;
-letter-spacing: 0.03em;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 
-color: var(--white-color);
-/* opacity: 0; */
-}
-
-.works .item:hover .thumb-text {
-/* opacity: 1; */
-}
+  color: var(--white-color);
+  }
 
 
 .works .section-title {
@@ -928,18 +937,18 @@ color: var(--white-color);
 
 /* Footer */
 
-footer {
+.footer {
   background-color: var(--secondary-bg-color);
 }
 
-.container.footer {
+.footer__content {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   align-items: baseline;  
 }
 
-.page-footer .logo {
+.footer .logo {
   display: block;
   margin-bottom: 20px;
 }
@@ -1014,17 +1023,5 @@ font-family: Roboto;
 font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.03em;
-}
-
-
-.footer .button {
-  margin-left: 12px;
-  padding-left: 29px;
-  padding-right: 62px;
-
-  background-image: url(../images/icon-send.png);
-  background-repeat: no-repeat;
-  background-position: left 148px bottom 13px;
-
 }
 
