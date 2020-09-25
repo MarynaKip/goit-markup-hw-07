@@ -16,7 +16,6 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
 
   font-family: Roboto;
   font-size: 14px;
@@ -24,12 +23,12 @@
   letter-spacing: 0.03em;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-field:hover .form-field__input,
-.form-field:focus .form-field__input {
-  border: 1px solid $accent-color;
-  outline-color: transparent;
+  .form-field:hover &,
+  .form-field:focus & {
+    border: 1px solid $accent-color;
+    outline-color: transparent;
+  }
 }
 
 .form-field__label {
@@ -56,11 +55,11 @@
   fill: $title-text-color;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-field:hover .modal-icon,
-.form-field:focus .modal-icon {
-  fill: $accent-color;
+  .form-field:hover &,
+  .form-field:focus & {
+    fill: $accent-color;
+  }
 }
 
 .checkbox {
@@ -104,13 +103,13 @@
 
   border: 1px solid $title-text-color;
   border-radius: 2px;
-}
 
-.checkbox__input:checked + .checkbox__label::after {
-  background-color: $accent-color;
-  background-image: url(../images/icon-check.svg);
-  background-position: center;
-  border-color: $accent-color;
+  .checkbox__input:checked + & {
+    background-color: $accent-color;
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+    border-color: $accent-color;
+  }
 }
 
 .checkbox__link {
@@ -126,18 +125,18 @@
   margin-bottom: 20px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-field:hover .form-field__textarea,
-.form-field:focus .form-field__textarea {
-  border: 1px solid $accent-color;
-}
+  .form-field:hover &,
+  .form-field:focus & {
+    border: 1px solid $accent-color;
+  }
 
-.form-field__textarea[placeholder="Введите текст"] {
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  &[placeholder="Введите текст"] {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }

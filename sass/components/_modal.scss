@@ -51,11 +51,11 @@
   fill: #000;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal_close:hover .modal__X,
-.modal__close:focus .modal__X {
-  fill: $accent-color;
+  .modal_close:hover &,
+  .modal__close:focus & {
+    fill: $accent-color;
+  }
 }
 
 .modal__title {
