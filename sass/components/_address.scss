@@ -1,0 +1,20 @@
+.address {
+  display: flex;
+  flex-direction: column;
+
+  color: $white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__link {
+  color: $secondary-address-color;
+  margin-top: 9px;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: $accent-color;
+}

@@ -1,1 +1,142 @@
+.form-field {
+  position: relative;
 
+  margin-bottom: 28px;
+}
+
+.form-field--comment {
+  margin-bottom: 20px;
+}
+
+.form-field__input {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover .form-field__input,
+.form-field:focus .form-field__input {
+  border: 1px solid $accent-color;
+  outline-color: transparent;
+}
+
+.form-field__label {
+  position: absolute;
+
+  left: 0px;
+  top: -18px;
+
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  fill: $title-text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover .modal-icon,
+.form-field:focus .modal-icon {
+  fill: $accent-color;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.checkbox__input {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__label::after {
+  content: "";
+
+  display: inline-block;
+  position: absolute;
+  right: 436px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  bottom: 0px;
+  width: 16px;
+  height: 15px;
+
+  border: 1px solid $title-text-color;
+  border-radius: 2px;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  background-color: $accent-color;
+  background-image: url(../images/icon-check.svg);
+  background-position: center;
+  border-color: $accent-color;
+}
+
+.checkbox__link {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.form-field__textarea {
+  width: 448px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover .form-field__textarea,
+.form-field:focus .form-field__textarea {
+  border: 1px solid $accent-color;
+}
+
+.form-field__textarea[placeholder="Введите текст"] {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
