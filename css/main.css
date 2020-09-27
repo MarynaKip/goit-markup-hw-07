@@ -1,4 +1,122 @@
 @charset "UTF-8";
+.form-field__input, .checkbox, .address, .advantages__paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.filter .button {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+.contact__link, .nav__link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.form-field__label, .form-field__textarea[placeholder="Введите текст"] {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.join__title, .subscribe__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+}
+
+.modal__title {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.subscribe__input[placeholder="E-mail"] {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.thumb__text {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.advantages__title--sign, .workout__text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team__title, .team__text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section__title--works {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.works__text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -82,10 +200,6 @@ textarea {
   display: flex;
   align-items: center;
   color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -236,20 +350,11 @@ textarea {
 
 .modal__title {
   margin-bottom: 30px;
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .logo {
   color: #2196f3;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .logo--light {
@@ -281,10 +386,7 @@ textarea {
   padding-left: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-family: Roboto, sans-serif;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -298,10 +400,6 @@ textarea {
   position: absolute;
   left: 0px;
   top: -18px;
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   color: #757575;
 }
 
@@ -323,16 +421,9 @@ textarea {
   position: relative;
   display: block;
   padding-left: 25px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .checkbox__input {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -384,10 +475,7 @@ textarea {
 }
 
 .form-field__textarea[placeholder="Введите текст"] {
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  font-family: Roboto, sans-serif;
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -397,10 +485,6 @@ textarea {
   color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 }
 
 .filter .button {
@@ -408,10 +492,6 @@ textarea {
   background-color: #f5f4fa;
   color: #212121;
   box-shadow: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -485,10 +565,6 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 322px;
-  font-family: Roboto;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
@@ -497,9 +573,6 @@ textarea {
   flex-direction: column;
   color: #ffffff;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .address__link {
@@ -519,11 +592,7 @@ textarea {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
 }
 
 .subscribe {
@@ -534,11 +603,6 @@ textarea {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .subscribe__form {
@@ -559,10 +623,7 @@ textarea {
 
 .subscribe__input[placeholder="E-mail"] {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  font-family: Roboto, sans-serif;
 }
 
 .section {
@@ -571,12 +632,7 @@ textarea {
 
 .section__title {
   margin-bottom: 50px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .header {
@@ -606,10 +662,6 @@ textarea {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -649,11 +701,6 @@ textarea {
   margin-top: 0px;
   margin-bottom: 30px;
   color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .advantages {
@@ -680,17 +727,6 @@ textarea {
   display: inline-block;
   margin-bottom: 10px;
   color: #212121;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.advantages__paragraph {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .advantages__rectangle {
@@ -728,13 +764,7 @@ textarea {
 .workout__text {
   padding-top: 27px;
   color: #ffffff;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .team {
@@ -758,19 +788,10 @@ textarea {
 .team__title {
   margin-bottom: 10px;
   color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team__text {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team__info {
@@ -845,17 +866,10 @@ textarea {
 .section__title--works {
   margin-bottom: 4px;
   color: #212121;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .works__text {
   color: #757575;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
 }
 
 .works__description {

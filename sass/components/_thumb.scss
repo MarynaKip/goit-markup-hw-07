@@ -31,10 +31,7 @@
 
   width: 322px;
 
-  font-family: Roboto;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @extend %thumb-font;
 
   color: $white-color;
 }

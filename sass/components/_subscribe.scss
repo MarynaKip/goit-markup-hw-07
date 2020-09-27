@@ -9,11 +9,7 @@
 
   color: $white-color;
 
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @extend %join-font;
 }
 
 .subscribe__form {
@@ -36,8 +32,6 @@
 .subscribe__input[placeholder="E-mail"] {
   color: rgba(255, 255, 255, 0.6);
 
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  font-family: $roboto-ss;
+  @extend %subscribe-font;
 }
