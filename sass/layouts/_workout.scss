@@ -26,6 +26,7 @@
 
   color: $white-color;
 
-  @extend %advantages-workout-font;
+  @include font(14px, 1.14, 0.03em, 700);
+  text-transform: uppercase;
   text-align: center;
 }
