@@ -24,10 +24,11 @@
 
   color: $title-text-color;
 
-  @extend %advantages-workout-font;
+  @include font(14px, 1.14, 0.03em, 700);
+  text-transform: uppercase;
 }
 .advantages__paragraph {
-  @extend %common-font;
+  @include font(14px, 1.71);
 }
 
 .advantages__rectangle {
