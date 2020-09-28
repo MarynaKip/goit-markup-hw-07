@@ -61,7 +61,7 @@
 .modal__title {
   margin-bottom: 30px;
 
-  @extend %modal-font;
+  @include font(20px, 1.15);
 
   color: $title-text-color;
 }
