@@ -31,7 +31,7 @@
 
   width: 322px;
 
-  @extend %thumb-font;
+  @include font(18px, 1.56);
 
   color: $white-color;
 }
