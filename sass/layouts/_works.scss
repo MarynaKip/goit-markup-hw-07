@@ -29,13 +29,13 @@
 
   color: $title-text-color;
 
-  @extend %title-works;
+  @include font(18px, 2, 0.06em, 700);
 }
 
 .works__text {
   color: $primary-text-color;
 
-  @extend %works-text;
+  @include font(18px, 2, 0.06em, 700);
 }
 
 .works__description {
