@@ -10,5 +10,6 @@
   color: $white-color;
 
   font-family: $roboto-ss;
-  @extend %join-font;
+  @include font(14px, 1.14);
+  text-transform: uppercase;
 }
