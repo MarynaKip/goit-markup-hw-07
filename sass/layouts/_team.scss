@@ -22,12 +22,14 @@
 
   color: $title-text-color;
 
-  @extend %team-font;
+  @include font(16px, 1.19, 0.03em, 500);
+  text-align: center;
 }
 
 .team__text {
   margin-bottom: 16px;
-  @extend %team-font;
+  @include font(16px, 1.19, 0.03em, 500);
+  text-align: center;
 }
 
 .team__info {
