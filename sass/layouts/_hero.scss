@@ -21,5 +21,6 @@
 
   color: $white-color;
 
-  @extend %hero-font;
+  @include font(44px, 1.36, 0.06em, 900);
+  text-transform: uppercase;
 }
