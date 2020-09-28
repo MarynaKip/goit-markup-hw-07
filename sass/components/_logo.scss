@@ -1,7 +1,7 @@
 .logo {
   color: $accent-color;
-
-  @extend %logo-font;
+  font-family: $relaway-ss;
+  @include font(26px, 1.2, 0.03em, 700);
 }
 
 .logo--light {
